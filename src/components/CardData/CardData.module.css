@@ -1,0 +1,29 @@
+
+.cardPage {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 25vh 25vw;
+}
+
+.card {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 1fr;
+    border-style: groove;
+}
+
+.cardBody {
+    border-bottom: 2px solid rgb(161, 161, 161);
+    margin: 10px 75px;
+}
+
+.cardData {
+    font-weight: bold;
+}
+
+.buttonFetch {
+    background-color: aquamarine;
+}
+
+.buttonPost {
+    background-color: darksalmon;
+}
