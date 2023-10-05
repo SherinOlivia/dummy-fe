@@ -1,6 +1,6 @@
 import './App.css'
 import  {BrowserRouter, Route, Routes } from 'react-router-dom'
-import { CardData } from './pages'
+import { CardX, CardY } from './pages'
 
 function App() {
   
@@ -9,7 +9,8 @@ function App() {
 
       <BrowserRouter>
           <Routes>
-            <Route path='/' element={<CardData />} /> 
+            <Route path='/' element={<CardX />} /> 
+            <Route path='/' element={<CardY />} /> 
           </Routes>
       </BrowserRouter>
 
