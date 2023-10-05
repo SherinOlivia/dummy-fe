@@ -4,6 +4,7 @@ import { Card, Button } from 'antd';
 import styles from './CardData.module.css'
 
 interface Props {
+    title: string;
     message: string | object;
     handleFetch: () => void;
     handlePost: () => void;
@@ -11,9 +12,9 @@ interface Props {
     handleDelete: () => void;
 }
 
-const CardData: React.FC<Props> = ({ message, handleFetch, handlePost, handleUpdate, handleDelete }) => (
+const CardData: React.FC<Props> = ({ title, message, handleFetch, handlePost, handleUpdate, handleDelete }) => (
     <div className={styles.cardPage}>
-      <Card title="W15 SH" bordered={false} className={styles.card}>
+      <Card title={title} bordered={false} className={styles.card}>
         <p>Message:</p>
         {typeof message === 'string' ? (
           <span className={styles.cardData}>{message}</span>

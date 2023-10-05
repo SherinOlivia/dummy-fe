@@ -101,7 +101,7 @@ const CardY = () => {
   return (
     <>
       <Button onClick={() => navigate('https://w15sh-fe.netlify.app')}>Test Card X</Button>
-      <CardDataForm message={message} handleFetch={handleFetch} handlePost={handlePost} 
+      <CardDataForm title={"W15-SH Y"} message={message} handleFetch={handleFetch} handlePost={handlePost} 
       handleUpdate={handleUpdate} handleDelete={handleDelete} />
     </>
 

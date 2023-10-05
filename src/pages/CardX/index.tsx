@@ -102,7 +102,7 @@ const CardX = () => {
   return (
     <>
       <Button onClick={() => navigate('https://w15fe.roozone.site')} className={styles.button}>Test Card Y</Button>
-      <CardDataForm message={message} handleFetch={handleFetch} handlePost={handlePost} 
+      <CardDataForm title={"W15-SH X"} message={message} handleFetch={handleFetch} handlePost={handlePost} 
       handleUpdate={handleUpdate} handleDelete={handleDelete} />
     </>
 
