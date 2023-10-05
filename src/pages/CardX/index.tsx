@@ -79,7 +79,7 @@ const CardX = () => {
   const handleDelete = async () => {
     try {
       const response = await fetch(apiUrl, {
-        method: 'GET',
+        method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
           'X-API-KEY': 'APIkeyTEST123',
