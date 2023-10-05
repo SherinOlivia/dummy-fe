@@ -4,14 +4,14 @@ import { CardX, CardY } from './pages';
 function App() {
   const currentHostname = window.location.hostname;
   console.log(currentHostname)
-  
+
   return (
     <BrowserRouter>
       <Routes>
-        {currentHostname === 'https://w15sh-fe.netlify.app' && (
+        {currentHostname === 'w15sh-fe.netlify.app' && (
           <Route path='/' element={<CardX />} />
         )}
-        {currentHostname === 'https://w15fe.roozone.site' && (
+        {currentHostname === 'w15fe.roozone.site' && (
           <Route path='/' element={<CardY />} />
         )}
       </Routes>
