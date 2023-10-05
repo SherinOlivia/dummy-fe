@@ -2,17 +2,17 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { CardX, CardY } from './pages';
 
 function App() {
-  // const currentHostname = window.location.hostname;
+  const currentHostname = window.location.hostname;
 
   return (
     <BrowserRouter>
       <Routes>
-        {/* {currentHostname === 'w15sh-fe.netlify.app' && ( */}
+        {currentHostname === 'w15sh-fe.netlify.app' && (
           <Route path='/' element={<CardX />} />
-        {/* )}
-         {currentHostname === 'w15fe.roozone.site' && ( */}
+        )}
+         {currentHostname === 'w15fe.roozone.site' && (
           <Route path='/' element={<CardY />} />
-         {/* )} */}
+         )}
       </Routes>
     </BrowserRouter>
   );
