@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 const CardData = () => {
   const [ message, setMessage ] = useState<string>('')
-  const apiUrl = 'http://localhost:6066/client-x'
+  const apiUrl = 'https://w15sh-cors-learning.up.railway.app/client-x'
 
   const handleFetch = async () => {
     try {
@@ -30,7 +30,7 @@ const CardData = () => {
 
   const handlePost = async () => {
     try {
-      const response = await     fetch(apiUrl, {
+      const response = await fetch(apiUrl, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
