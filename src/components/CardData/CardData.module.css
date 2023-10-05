@@ -25,5 +25,13 @@
 }
 
 .buttonPost {
+    background-color:cornflowerblue;
+}
+
+.buttonUpdate {
+    background-color:rgb(219, 213, 125);
+}
+
+.buttonDelete {
     background-color: darksalmon;
 }

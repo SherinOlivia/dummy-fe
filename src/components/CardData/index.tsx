@@ -7,9 +7,11 @@ interface Props {
     message: string | object;
     handleFetch: () => void;
     handlePost: () => void;
+    handleUpdate: () => void;
+    handleDelete: () => void;
 }
 
-const CardData: React.FC<Props> = ({ message, handleFetch, handlePost }) => (
+const CardData: React.FC<Props> = ({ message, handleFetch, handlePost, handleUpdate, handleDelete }) => (
     <div className={styles.cardPage}>
       <Card title="W15 SH" bordered={false} className={styles.card}>
         <p>Message:</p>
@@ -24,6 +26,14 @@ const CardData: React.FC<Props> = ({ message, handleFetch, handlePost }) => (
         </Button>
         <Button onClick={handlePost} className={styles.buttonPost}>
           Post Data
+        </Button>
+        </div>
+        <div>
+        <Button onClick={handleUpdate} className={styles.buttonUpdate}>
+          Update Data
+        </Button>
+        <Button onClick={handleDelete} className={styles.buttonDelete}>
+          Delete Data
         </Button>
         </div>
         <div className={styles.cardBody}></div>
