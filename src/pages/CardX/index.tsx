@@ -1,6 +1,6 @@
+import { Button } from 'antd';
 import { CardData as CardDataForm } from '../../components';
 import { useState } from 'react';
-import { Button } from 'antd';
 import styles from './CardX.module.css'
 
 const CardX = () => {

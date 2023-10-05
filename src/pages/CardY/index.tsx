@@ -1,6 +1,7 @@
 import { Button } from 'antd';
 import { CardData as CardDataForm } from '../../components';
 import { useState } from 'react';
+import styles from './CardY.module.css'
 
 const CardY = () => {
   const [ message, setMessage ] = useState<string>('')
@@ -98,7 +99,7 @@ const CardY = () => {
 
   return (
     <>
-      <Button onClick={() => window.location.href = 'https://w15sh-fe.netlify.app'}>Test Card X</Button>
+      <Button onClick={() => window.location.href = 'https://w15sh-fe.netlify.app'} className={styles.button}>Test Card X</Button>
       <CardDataForm title={"W15-SH Y"} message={message} handleFetch={handleFetch} handlePost={handlePost} 
       handleUpdate={handleUpdate} handleDelete={handleDelete} />
     </>
