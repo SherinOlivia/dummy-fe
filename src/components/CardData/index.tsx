@@ -21,7 +21,7 @@ const CardData: React.FC<Props> = ({ title, message, handleFetch, handlePost, ha
         ) : (
           <pre className={styles.cardData}>{JSON.stringify(message, null, 2)}</pre>
         )}
-        <div>
+        <div className={styles.buttons}>
         <Button onClick={handleFetch} className={styles.buttonFetch}>
           Fetch Data
         </Button>
@@ -29,7 +29,7 @@ const CardData: React.FC<Props> = ({ title, message, handleFetch, handlePost, ha
           Post Data
         </Button>
         </div>
-        <div>
+        <div className={styles.buttons}>
         <Button onClick={handleUpdate} className={styles.buttonUpdate}>
           Update Data
         </Button>
