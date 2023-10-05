@@ -55,7 +55,6 @@ const CardData = () => {
 
   );
 
- return null
 };
 
 export default CardData;
