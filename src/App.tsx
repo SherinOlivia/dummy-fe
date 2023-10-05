@@ -3,7 +3,8 @@ import { CardX, CardY } from './pages';
 
 function App() {
   const currentHostname = window.location.hostname;
-
+  console.log(currentHostname)
+  
   return (
     <BrowserRouter>
       <Routes>
