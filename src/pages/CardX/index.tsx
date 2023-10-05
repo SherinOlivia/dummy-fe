@@ -1,11 +1,9 @@
-import { useNavigate } from 'react-router-dom';
 import { CardData as CardDataForm } from '../../components';
 import { useState } from 'react';
 import { Button } from 'antd';
 import styles from './CardX.module.css'
 
 const CardX = () => {
-  const navigate = useNavigate()
   const [ message, setMessage ] = useState<string>('')
   const apiUrl = 'https://w15sh-cors-learning.up.railway.app/client-x'
 
@@ -101,7 +99,7 @@ const CardX = () => {
 
   return (
     <>
-      <Button onClick={() => navigate('https://w15fe.roozone.site')} className={styles.button}>Test Card Y</Button>
+      <Button onClick={() => window.location.href = 'https://w15fe.roozone.site'} className={styles.button}>Test Card Y</Button>
       <CardDataForm title={"W15-SH X"} message={message} handleFetch={handleFetch} handlePost={handlePost} 
       handleUpdate={handleUpdate} handleDelete={handleDelete} />
     </>
