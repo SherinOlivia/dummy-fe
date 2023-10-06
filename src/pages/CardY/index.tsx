@@ -100,7 +100,7 @@ const CardY = () => {
   return (
     <>
       <div className={styles.body}>
-        <Button onClick={() => window.location.href = 'https://w15sh-fe.netlify.app'} className={styles.button}>Test Card X</Button>
+        <Button onClick={() => window.location.href = 'https://w15fe.vercel.app'} className={styles.button}>Test Card X</Button>
         <CardDataForm title={"W15-SH Y"} message={message} handleFetch={handleFetch} handlePost={handlePost} 
         handleUpdate={handleUpdate} handleDelete={handleDelete} />
       </div>

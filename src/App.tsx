@@ -7,10 +7,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {currentHostname === 'w15sh-fe.netlify.app' && (
+        {currentHostname === 'w15fe.vercel.app' && (
           <Route path='/' element={<CardX />} />
         )}
-         {currentHostname === 'w15fe.roozone.site' && (
+         {currentHostname === 'w15-fe.roozone.site' && (
           <Route path='/' element={<CardY />} />
          )}
           <Route path='/clickjacking' element={<ClickJacking />} />
